@@ -10,6 +10,15 @@ function convertToRoman(num) {
     };
 
   //your code here
+	let roman="";
+	for(let i in obj){
+		while(num>= obj[i][1]){
+			roman+=obj[i][0];
+			num-=obj[i][1];
+		}
+	}
+	return roman;
+	
 
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
